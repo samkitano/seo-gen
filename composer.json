@@ -1,0 +1,22 @@
+{
+    "name": "samkitano/seo-gen",
+    "description": "Generate sitemap.xml and robots.txt files in Laravel 4.2 with support for multi-language. Based on Hettiger/SeoAggregator",
+    "keywords": ["seo", "generate", "generator", "multi-language", "robots.txt", "sitemap.xml", "seo-gen"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Kitano",
+            "email": "sam.kitano@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Samkitano\\SeoGen": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
