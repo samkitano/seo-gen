@@ -161,9 +161,21 @@ else
 Route::group( array('prefix' => $locale),
 	function()
 	{
-		Route::get( trans('routes.home'),       array('as' => 'home',       'uses' => 'ExampleController@home') );
-		Route::get( trans('routes.portfolio'),  array('as' => 'portfolio',  'uses' => 'ExampleController@portfolio') );
-		Route::get( trans('routes.contacts'),   array('as' => 'contacts',   'uses' => 'ExampleController@contacts') );
+		Route::get( trans('routes.home'),
+			array('as' => 'home',       'uses' => 'ExampleController@home')
+		);
+
+		Route::get( trans('routes.portfolio'),
+			array('as' => 'portfolio',  'uses' => 'ExampleController@portfolio')
+		);
+
+		Route::get( trans('routes.contacts'),
+			array('as' => 'contacts',   'uses' => 'ExampleController@contacts')
+		);
+
+		Route::get( trans('routes.pages' . '/{slug}'),
+			array('as' => 'contacts',   'uses' => 'ExampleController@contacts')
+		);
 	}
 );
 
