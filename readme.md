@@ -134,7 +134,7 @@ SeoGen will take a look at your app configuration file to find out your app's de
 
 Now you can use SeoGen wherever you like in your app.
 
-For the sake of this example simplicity we will do it right in `app\routes.php`, but you should use a controller instead.
+For the sake of this example's simplicity we will do it right in `app\routes.php`, but you should use a controller instead.
 
 ```php
 /**
