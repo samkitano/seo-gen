@@ -32,8 +32,11 @@ php artisan config:publish samkitano/seo-gen
 ```
 
 Modify `app\config\packages\samkitano\seo-gen\config.php` to suit your needs.
+
 Provide the name of the file you are using to translate your routes in `'translated_routes_file'`. Do not include extension.
+
 If you don't need to translate your url prefix (you wouldn't be here in that case now, would you?) you should probably use another package, but feel free to open a pull request and make some changes :)
+
 For example purposes we will use the default `'translated_routes_file' => 'routes',`
 
 ### Usage examples with Laravel 4.2
@@ -130,7 +133,8 @@ SeoGen will take a look at your app configuration file to find out your app's de
 ```
 
 Now you can use SeoGen wherever you like in your app.
-For the sake of this example simplicity we will do it right in `app\routes.php`, but you should use a controller, instead.
+
+For the sake of this example simplicity we will do it right in `app\routes.php`, but you should use a controller instead.
 
 ```php
 /**
@@ -187,7 +191,7 @@ Route::get('robots.txt', function()
 
 ```
 
-The above example should return something like
+The above example should return a sitemap with something like
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -237,7 +241,7 @@ The above example should return something like
 </urlset>
 ```
 
-and
+and robots.txt
 
 ```txt
 User-agent: *
@@ -252,4 +256,5 @@ SeoGen does NOT translate slugs for the time being.
 ### License
 
 [SEO Aggregator](https://github.com/hettiger/seo-aggregator) is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
 [SEO GEN](https://github.com/samkitano/seo-gen) is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
